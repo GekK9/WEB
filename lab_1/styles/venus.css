@@ -6,6 +6,8 @@
     --text: #fff8e1;
 }
 
+
+
 body {
     background: radial-gradient(circle at 20% 20%, #5e2b00, #1a0f00);
 }
@@ -13,4 +15,30 @@ body {
 main {
     background: rgba(255, 255, 200, 0.07);
     box-shadow: 0 0 25px rgba(255, 179, 71, 0.3);
+}
+
+header {
+
+    border-bottom: 2px solid var(--accent);
+}
+
+header h1,
+h2,
+h3,
+footer {
+    color: var(--text);
+    text-shadow: 0 0 10px var(--accent-light);
+}
+
+nav a {
+    border: 1px solid var(--accent-light);
+}
+
+nav a:hover {
+    background: var(--accent);
+    box-shadow: 0 0 10px var(--accent-light);
+}
+
+section img {
+    box-shadow: 0 0 20px var(--accent-light);
 }

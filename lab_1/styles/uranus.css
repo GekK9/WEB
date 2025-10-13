@@ -10,7 +10,33 @@ body {
     background: radial-gradient(circle at 20% 20%, #002b29, #000);
 }
 
+header {
+
+    border-bottom: 2px solid var(--accent);
+}
+
 main {
     background: rgba(127, 255, 212, 0.05);
     box-shadow: 0 0 25px rgba(127, 255, 212, 0.3);
+}
+
+header h1,
+h2,
+h3,
+footer {
+    color: var(--text);
+    text-shadow: 0 0 10px var(--accent-light);
+}
+
+nav a {
+    border: 1px solid var(--accent-light);
+}
+
+nav a:hover {
+    background: var(--accent);
+    box-shadow: 0 0 10px var(--accent-light);
+}
+
+section img {
+    box-shadow: 0 0 20px var(--accent-light);
 }
