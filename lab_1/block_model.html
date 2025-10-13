@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Описание Солнечной системы, её планет и характеристик.">
+    <link rel="stylesheet" href="/lab_1/styles/block_model.css">
+    <title>Солнечная система</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Солнечная система</h1>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a href="/lab_1/mercury.html" class="nav__link">Меркурий</a></li>
+                <li><a href="/lab_1/venus.html" class="nav__link">Венера</a></li>
+                <li><a href="/lab_1/earth.html" class="nav__link">Земля</a></li>
+                <li><a href="/lab_1/mars.html" class="nav__link">Марс</a></li>
+                <li><a href="/lab_1/jupiter.html" class="nav__link">Юпитер</a></li>
+                <li><a href="/lab_1/saturn.html" class="nav__link">Сатурн</a></li>
+                <li><a href="/lab_1/uranus.html" class="nav__link">Уран</a></li>
+                <li><a href="/lab_1/neptune.html" class="nav__link">Нептун</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <article class="intro">
+            <section class="intro__content">
+                <img src="/lab_1/src/assets/img/space.jpg" alt="Вид на космос" class="intro__image">
+
+                <div class="intro__text">
+                    <p>Солнечная система — это гравитационно связанная система небесных тел, в центре которой находится
+                        Солнце.</p>
+                    <p>В её состав входят 8 планет, спутники, карликовые планеты, астероиды, кометы и метеориты.</p>
+                    <p>Планеты делятся на внутренние и внешние, а Солнце играет ключевую роль в удержании системы.</p>
+                </div>
+
+                <aside class="intro__media">
+                    <video class="intro__video" autoplay muted controls>
+                        <source src="/lab_1/src/assets/img/media/Rainbow_Nebula_4K_Motion_Background.mp4"
+                            type="video/mp4">
+                    </video>
+
+                    <div class="intro__audio">
+                        <h3>Звуки космоса</h3>
+                        <audio controls src="/lab_1/src/assets/img/audio/z_uki-kosmosu-zemlya.mp3"></audio>
+                    </div>
+                </aside>
+            </section>
+        </article>
+
+        <section class="parameters">
+            <h2 class="section-title">Параметры солнечной системы</h2>
+
+            <div class="parameters__grid">
+                <article class="parameters__card">
+                    <h3>Солнце</h3>
+                    <ul>
+                        <li><strong>Масса:</strong> 1.989 × 10<sup>30</sup> кг</li>
+                        <li><strong>Диаметр:</strong> 1.39 млн км</li>
+                        <li><strong>Температура:</strong> 5500°C на поверхности</li>
+                    </ul>
+                </article>
+
+                <article class="parameters__card">
+                    <h3>Граница системы</h3>
+                    <ul>
+                        <li><strong>Пояс Койпера:</strong> 30–50 а.е.</li>
+                        <li><strong>Область Оорта:</strong> 50,000–100,000 а.е.</li>
+                    </ul>
+                </article>
+
+                <article class="parameters__card">
+                    <h3>Малые тела</h3>
+                    <ul>
+                        <li>Астероиды</li>
+                        <li>Кометы</li>
+                        <li>Метеороиды</li>
+                    </ul>
+                </article>
+
+                <article class="parameters__card">
+                    <h3>Солнечный ветер</h3>
+                    <ul>
+                        <li><strong>Скорость:</strong> 300–800 км/с</li>
+                        <li><strong>Воздействие:</strong> полярные сияния</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="distance">
+            <h2 class="section-title">Удалённость планет от Солнца</h2>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Планета</th>
+                        <th>Расстояние (млн км)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Меркурий</td>
+                        <td>58</td>
+                    </tr>
+                    <tr>
+                        <td>Венера</td>
+                        <td>108</td>
+                    </tr>
+                    <tr>
+                        <td>Земля</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Марс</td>
+                        <td>227</td>
+                    </tr>
+                    <tr>
+                        <td>Юпитер</td>
+                        <td>778</td>
+                    </tr>
+                    <tr>
+                        <td>Сатурн</td>
+                        <td>1 430</td>
+                    </tr>
+                    <tr>
+                        <td>Уран</td>
+                        <td>2 870</td>
+                    </tr>
+                    <tr>
+                        <td>Нептун</td>
+                        <td>4 500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Автор: Евдокимов Никита</p>
+        <time datetime="2025-09-10">10 сентября 2025</time>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+@import url("styles.css");
+
+:root {
+    --accent: #ffb347;
+    --accent-light: #ffd27f;
+    --text: #fff8e1;
+}
+
+body {
+    background: radial-gradient(circle at 20% 20%, #5e2b00, #1a0f00);
+}
+
+main {
+    background: rgba(255, 255, 200, 0.07);
+    box-shadow: 0 0 25px rgba(255, 179, 71, 0.3);
+}

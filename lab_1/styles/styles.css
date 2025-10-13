@@ -1,201 +1,173 @@
-:root {
-    --bg: #0b1020;
-    --card: #0f1724;
-    --muted: #98a0b3;
-    --accent: #7dd3fc;
-    --accent-2: #a78bfa;
-    --text: #eef2ff;
-    --max-width: 1200px;
-    --radius: 12px;
-    --gap: 1.5rem;
-    --transition: 200ms ease;
-    --glass: rgba(255, 255, 255, 0.04);
-}
-
+/* ====== Общие стили ====== */
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0
-}
-
-html,
-body {
-    height: 100%;
+    padding: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    background: linear-gradient(180deg, #05060a 0%, var(--bg) 60%);
-    color: var(--text);
+    background: radial-gradient(circle at 20% 20%, #0b1b2b, #000);
+    color: #f0f0f0;
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-/* Контейнер */
-main,
-header,
-footer {
-    width: 100%;
-    max-width: var(--max-width);
-    padding: 1rem;
-}
-
+/* ====== Заголовок ====== */
 header {
     text-align: center;
-
-    margin-bottom: 1.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem 1rem;
+    border-bottom: 2px solid #2e8bff;
 }
 
 header h1 {
-    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    font-size: 2.5rem;
+    color: #9fd6ff;
+    text-shadow: 0 0 10px #2e8bff;
     margin-bottom: 1rem;
 }
 
-/* Навигация */
-nav ol {
+/* ====== Навигация ====== */
+nav ol,
+nav ul {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 0.75rem 1rem;
+    justify-content: center;
     list-style: none;
-}
-
-nav li {
-    background: var(--glass);
-    padding: 0.4rem 0.9rem;
-    border-radius: 8px;
-    transition: var(--transition);
+    gap: 1rem;
+    padding: 0;
 }
 
 nav a {
-    color: var(--text);
+    color: #ffffff;
     text-decoration: none;
-    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 1px solid #2e8bff;
+    border-radius: 6px;
+    transition: all 0.3s ease;
 }
 
-nav li:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+nav a:hover {
+    background: #2e8bff;
+    color: #000;
+    box-shadow: 0 0 10px #2e8bff;
 }
 
-/* Основной макет */
-main article {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: var(--gap);
-    width: 100%;
-}
-
-
-main article img {
-    width: 100%;
+/* ====== Основная часть ====== */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(46, 139, 255, 0.2);
 }
 
 section {
-    margin-bottom: var(--gap);
+    margin-bottom: 2.5rem;
 }
 
-section h2 {
-    color: var(--accent);
-    text-align: center;
-    margin-bottom: 0.5rem;
-}
-
-p {
-    color: var(--muted);
-    margin-bottom: 0.8rem;
-}
-
-/* Сайдбар */
-aside {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.03));
-    padding: 1rem;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    align-items: center;
-    position: sticky;
-    top: 1rem;
-    height: fit-content;
-}
-
-video,
-audio {
+section img {
+    display: block;
     width: 100%;
-    border-radius: 8px;
-    background: #000;
+    max-width: 700px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(46, 139, 255, 0.3);
 }
 
-aside h3 {
-    color: var(--accent-2);
-}
-
-/* Таблица */
+/* ====== Таблицы ====== */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 0.5rem;
-    table-layout: fixed;
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
+th,
+td {
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
 
-td,
 th {
-    padding: 0.6rem 0.9rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    word-wrap: break-word;
+    background: rgba(46, 139, 255, 0.3);
+    color: #fff;
 }
-
-
-td:first-child,
-th:first-child {
-    width: 35%;
-    /* уменьшаем ширину первого столбца */
-}
-
 
 tr:nth-child(even) {
-    background: rgba(255, 255, 255, 0.03);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
-
-th {
-    color: var(--accent);
-    text-align: left;
+/* ====== Видео / Аудио ====== */
+video,
+iframe {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 0 0 15px rgba(46, 139, 255, 0.4);
 }
 
-/* Footer */
+audio {
+    display: block;
+    margin: 0.5rem auto 1rem;
+}
+
+/* ====== Заголовки ====== */
+h2,
+h3 {
+    color: #9fd6ff;
+    text-shadow: 0 0 8px #2e8bff;
+    margin-bottom: 1rem;
+}
+
+/* ====== Списки ====== */
+ul {
+    margin-left: 1.5rem;
+    list-style-type: "🌌 ";
+}
+
+/* ====== Боковые элементы ====== */
+aside {
+    margin-top: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 3px solid #2e8bff;
+}
+
+/* ====== Подвал ====== */
 footer {
+    text-align: center;
+    padding: 1rem;
     margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 0.9rem;
-    color: var(--muted);
+    color: #9fd6ff;
 }
 
-/* Адаптивность */
-@media(max-width:900px) {
-    main article {
-        grid-template-columns: 1fr;
+/* ====== Адаптивность ====== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
     }
 
-    aside {
-        position: static;
-    }
-}
-
-@media(max-width:500px) {
-    nav ol {
-        flex-direction: column;
-        align-items: center;
+    main {
+        padding: 1rem;
     }
 
-    footer {
-        flex-direction: column;
-        gap: 0.5rem;
+    nav a {
+        padding: 0.4rem 0.8rem;
+    }
+
+    table,
+    th,
+    td {
+        font-size: 0.9rem;
     }
 }
