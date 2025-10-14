@@ -1,4 +1,4 @@
-/* ==== Переменные ==== */
+
 :root {
     --bg-color: radial-gradient(circle at 20% 20%, #0b1b2b, #000);
     --accent: #2e8bff;
@@ -6,7 +6,7 @@
     --text-color: #f0f0f0;
 }
 
-/* ==== Базовые настройки ==== */
+
 * {
     margin: 0;
     padding: 0;
@@ -35,7 +35,7 @@ body {
     margin-bottom: 1rem;
 }
 
-/* ==== Навигация ==== */
+
 .nav__list {
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +59,7 @@ body {
     box-shadow: 0 0 10px var(--accent);
 }
 
-/* ==== Main ==== */
+
 .main {
     max-width: 1000px;
     margin: 2rem auto;
@@ -69,7 +69,7 @@ body {
     box-shadow: 0 0 20px rgba(46, 139, 255, 0.2);
 }
 
-/* ==== Вступительный блок ==== */
+
 .intro__image {
     display: block;
     width: 100%;
@@ -97,7 +97,7 @@ ul {
     padding-left: 20px;
 }
 
-/* ==== Секции и заголовки ==== */
+
 .section-title {
     color: var(--accent-light);
     text-shadow: 0 0 8px var(--accent);
@@ -124,7 +124,7 @@ ul {
     margin-bottom: 0.5rem;
 }
 
-/* ==== Таблица ==== */
+
 .table {
     width: 100%;
     border-collapse: collapse;
@@ -142,7 +142,7 @@ ul {
     background: rgba(46, 139, 255, 0.3);
 }
 
-/* ==== Footer ==== */
+
 .footer {
     text-align: center;
     padding: 1rem;
@@ -150,7 +150,7 @@ ul {
     color: var(--accent-light);
 }
 
-/* ==== Адаптивность ==== */
+
 @media (max-width: 768px) {
     .header__title {
         font-size: 2rem;
